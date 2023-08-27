@@ -15,8 +15,8 @@ import CardHover from '../components/CardHover'
 import Cards from '../components/Cards/Cards'
 import { properties } from "../constants/data";
 import  AnimatedTabs  from '../components/NavgationPage/Navgation'
-import NewsletterForm from '../components/NewsLetter/NewsletterForm'
-
+import NewsletterForm from '../components/NewsLetter/NewsLetter'
+import ToggleMenu from '../components/ToggleMenu/header'
 
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
     <>
      
       <div className="outWrap overflow-hidden " id='about'>
-
+        <ToggleMenu/>
         <AnimatedTabs />
         <Hero />
   
@@ -71,7 +71,7 @@ export default function Home() {
    
         <FeaturesBlocks />
         <Testimonials />
-        <NewsletterForm/>
+        <NewsletterForm />
 
 
       </div>
