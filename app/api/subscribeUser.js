@@ -19,12 +19,12 @@ export default async (req, res) => {
     };
 
     const response = await fetch(
-      `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`,
+      `https://us10.api.mailchimp.com/3.0/lists/eb8c5707bf`,
 
       {
         body: JSON.stringify(data),
         headers: {
-          Authorization: `apikey ${API_KEY}`,
+          Authorization: `apikey 505a0ffac6c87ba00dc98e7a458fe503-us10`,
           'Content-Type': 'application/json',
         },
         method: 'POST',
