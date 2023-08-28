@@ -6,7 +6,9 @@ import { useEffect } from 'react'
 import Footer from '@/components/ui/footer'
 import Banner from '@/components/banner'
 import Navbar from '../components/Navbar/Navbar'
-import Email from '../components/ui/email'
+import Email from '../components/ui/email';
+import ToggleMenu from '../components/ToggleMenu/header'
+
 // const inter = Inter({
 //   subsets: ['latin'],
 //   variable: '--font-inter',
@@ -36,11 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` font-inter antialiased bg-white text-gray-900 tracking-tight`}>
+      
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
-          <div className="fix bg-neutral-800	 py-4 w-full text-white text-center ">
-             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis repellat consequuntur officia 
-          </div>
-          <Navbar />
+        
+          <ToggleMenu/>
           {children}
           <Banner />
           <Email/>

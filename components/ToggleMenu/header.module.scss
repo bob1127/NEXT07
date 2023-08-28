@@ -1,10 +1,21 @@
+.wrap {
+    // position: absolute;
+    top: 0;
+
+
+}
+
 .header {
+
     background-color: #f4f0ea;
-    position: fixed;
+    // position: absolute;
+    top: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+
     z-index: 99999999;
+    padding: 20px;
+
 
     .background {
         background-color: black;
@@ -110,7 +121,7 @@
 
 @media only screen and (min-width: 600px) {
     .header {
-        padding: 20px;
+
 
         .bar {
             font-size: 15px;

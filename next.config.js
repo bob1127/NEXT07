@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: ".",
- images: {
-        domains: ['www.zensor.com.tw'],
-         loader: "imgix",
-   path: "/",
-    },
+//   assetPrefix: ".",
+//  images: {
+//         domains: ['www.zensor.com.tw'],
+//          loader: "imgix",
+//    path: "/",
+//     },
   //  images: {
   // loader: "imgix",
   //   path: "/",

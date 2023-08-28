@@ -16,7 +16,7 @@ import Cards from '../components/Cards/Cards'
 import { properties } from "../constants/data";
 import  AnimatedTabs  from '../components/NavgationPage/Navgation'
 import NewsletterForm from '../components/NewsLetter/NewsLetter'
-import ToggleMenu from '../components/ToggleMenu/header'
+// import ToggleMenu from '../components/ToggleMenu/header'
 
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
     <>
      
       <div className="outWrap overflow-hidden " id='about'>
-        <ToggleMenu/>
+        {/* <ToggleMenu/> */}
         <AnimatedTabs />
         <Hero />
   

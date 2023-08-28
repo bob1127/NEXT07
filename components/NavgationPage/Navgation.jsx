@@ -5,6 +5,8 @@ import React from "react";
 
 import { Link } from "@nextui-org/react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
+
 
 
 
@@ -70,6 +72,7 @@ function AnimatedTabs() {
                             <>
                                 <ModalHeader className="flex flex-col gap-1"></ModalHeader>
                                 <ModalBody>
+                                    <Image src=''></Image>
                                   
                                     
                                 </ModalBody>

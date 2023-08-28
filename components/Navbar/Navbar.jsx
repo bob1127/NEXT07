@@ -103,7 +103,7 @@ export default function App() {
                                     }
                                 }}
                             >About</motion.a>
-                            {/* <motion.a href=""
+                            <motion.a href=""
                                 initial={{ y: 80, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: .6 }}
@@ -119,7 +119,7 @@ export default function App() {
                                 <MobileMenu />
 
 
-                            </motion.a> */}
+                            </motion.a>
                             <motion.a href=""
                                 initial={{ y: 80, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
