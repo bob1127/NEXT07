@@ -8,20 +8,20 @@ import Image from 'next/image'
 import { Table } from "@nextui-org/react";
 import { useState } from "react";
 import Head from "next/head";
-import CarouselThumbs from "../../../components/CarouselThumbs";
-import ProductImage from "../../../components/ProductImage";
+import CarouselThumbs from "../../../../components/CarouselThumbs";
+import ProductImage from "../../../../components/ProductImage";
 
 
 
-import Carousel from "../../../components/Products/ProductCarousel";
-import Navigation from "../../../components/Products/Navigation";
+import Carousel from "../../../../components/Products/ProductCarousel";
+import Navigation from "../../../../components/Products/Navigation";
 
-import styles from '../../../components/two-colum/twoColumn.module.scss'
-import { projects } from '../../../components/two-colum/data';
+import styles from '../../../../components/two-colum/twoColumn.module.scss'
+import { projects } from '../../../../components/two-colum/data';
 
-import Double from '../../../components/two-colum/Double';
-import ModalBrn from "../../../components/ModalBtn"
-
+import Double from '../../../../components/two-colum/Double';
+import ModalBrn from "../../../../components/ModalBtn"
+import { useTranslation } from '../../../i18n'
 
 
 const textAnimate = {
@@ -116,7 +116,9 @@ const slideNumberStyle = {
     fontSize: "20px",
     fontWeight: "bold",
 };
-const Product = props => (
+export default async function Page({ params: { lng } }) {
+    const { t } = await useTranslation(lng)
+    return (
     <motion.div initial='initial' animate='animate' exit={{ opacity: 0 }}>
         <Navigation />
         <div className='fullscreen'>
@@ -476,18 +478,9 @@ const Product = props => (
 
     </motion.div>
 
-);
 
 
-// Product.getInitialProps = async function (context) {
-//     const { id } = context.query;
-//     const res = await fetch(
-//         `https://my-json-server.typicode.com/bob1127/next/products/${id}`
-//     );
-//     const product = await res.json();
-//     return { product };
 
+  )
+}
 
-// };
-
-export default Product;

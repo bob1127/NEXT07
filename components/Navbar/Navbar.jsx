@@ -59,17 +59,17 @@ export default function App() {
 
     return (
 
-        <Navbar className='nav'>
+        <Navbar className='nav sm:hidden'>
 
             <header>
-                <div className="menu" onClick={isOpen}>
+                <div className="menu sm:hidden" onClick={isOpen}>
                     <i className="fa fa-bars"></i>
                 </div>
             </header>
             <AnimatePresence >
                 {
                     open && (
-                        <motion.div className="menu_container  bg-pink-600"
+                        <motion.div className=" menu_container z-50  bg-pink-600"
                             variants={item}
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "100vh", opacity: 1 }}
@@ -77,7 +77,7 @@ export default function App() {
                             exit="exit"
                         >
                             <div className="btn_close" onClick={closeMenu}>X</div>
-                            <motion.a href=""
+                            <motion.a href="/"
                                 initial={{ y: 80, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: .8 }}
@@ -103,24 +103,8 @@ export default function App() {
                                     }
                                 }}
                             >About</motion.a>
-                            <motion.a href=""
-                                initial={{ y: 80, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ delay: .6 }}
-                                exit={{
-                                    opacity: 0,
-                                    y: 90,
-                                    transition: {
-                                        ease: "easeInOut",
-                                        delay: .6
-                                    }
-                                }}
-                            >
-                                <MobileMenu />
-
-
-                            </motion.a>
-                            <motion.a href=""
+                         
+                            <motion.a href="/Products"
                                 initial={{ y: 80, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: .5 }}
@@ -132,7 +116,7 @@ export default function App() {
                                         delay: .4
                                     }
                                 }}
-                            >Blog</motion.a>
+                            >Products</motion.a>
                             <motion.a href=""
                                 initial={{ y: 80, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
@@ -151,12 +135,11 @@ export default function App() {
                 }
             </AnimatePresence>
             <NavbarBrand>
-                <AcmeLogo />
-                <p className="font-bold text-inherit">ACME</p>
+             
 
             </NavbarBrand>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            <NavbarContent className="hidden  gap-4" justify="center">
                 <Dropdown className='fixed'>
                     <NavbarItem>
                         <DropdownTrigger>
@@ -232,7 +215,7 @@ export default function App() {
                 </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end">
-                <div className="flex justify-center">
+                {/* <div className="flex justify-center">
                     {currentTheme === 'dark' ? (
                         <button
                             className=" hover:bg-black w-auto   p-2"
@@ -249,7 +232,8 @@ export default function App() {
                             <Image src="/moon.svg" alt="logo" height="30" width="30" />
                         </button>
                     )}
-                </div>
+                </div> */}
+      
             </NavbarContent>
         </Navbar>
 

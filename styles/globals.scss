@@ -16,7 +16,7 @@
 
 
 .menu {
-    display: none;
+
     width: 58px;
     height: 58px;
     border: 1px solid #64f929;
@@ -24,9 +24,7 @@
     @extend .dflex;
     cursor: pointer;
 
-    @media(max-width:550px) {
-        display: block;
-    }
+
 
 }
 
@@ -106,7 +104,7 @@
 
         h1 {
             font-size: 2rem;
-            margin: 8px 0;
+
         }
     }
 

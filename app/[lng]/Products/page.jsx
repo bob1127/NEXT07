@@ -5,8 +5,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 import React from "react";
-import img01 from "../../public/images/brazil.webp";
-
+import img01 from "../../../public/images/brazil.webp";
+import { useTranslation } from '../../i18n'
 
 
 
@@ -37,28 +37,30 @@ const stagger = {
     }
 };
 
-const Index = props => (
+export default async function Page({ params: { lng } }) {
+    const { t } = await useTranslation(lng)
+    return (
+
 
     <motion.div initial='initial' animate='animate' exit={{ opacity: 0 }}>
-        <div className='container center'>
+        <div className='container center flex flex-col '>
             <motion.div
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 className='title'>
-                <h1>Select a protein</h1>
+                <h1 className="mt-30 text-center">Select a protein</h1>
             </motion.div>
-            <motion.div variants={stagger} className='product-row'>
+            <motion.div variants={stagger} className='product-row border border-slate-950 flex  w-full flex-wrap '>
 
-                <Link
-
-                    href='./Products/product01'
-                >
+                    <Link href={`/${lng}/Products/product01`}>
                     <motion.div
                         variants={fadeInUp}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className='card'>
-                        <span className='category'>Protein</span>
+                        className='card border border-slate-950'>
+                        <span className='category'>快速幽門螺旋桿菌尿素呼吸檢測組
+</span>
+                     
                         <motion.img
                             initial={{ x: 60, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
@@ -72,15 +74,12 @@ const Index = props => (
                         </div>
                     </motion.div>
                 </Link>
-                <Link
-
-                    href=''
-                >
+                    <Link href={`/${lng}/Products/product01`}>
                     <motion.div
                         variants={fadeInUp}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className='card'>
+                        className='card border border-slate-950'>
                         <span className='category'>Protein</span>
                         <motion.img
                             initial={{ x: 60, opacity: 0 }}
@@ -104,16 +103,7 @@ const Index = props => (
             </>
         </div>
     </motion.div>
-)
+  )
+}
 
-// Index.getInitialProps = async function () {
-//     const res = await fetch(
-//         "https://my-json-server.typicode.com/bob1127/next/products"
-//     );
-//     const data = await res.json();
-//     return {
-//         products: data
-//     };
-// };
 
-export default Index;

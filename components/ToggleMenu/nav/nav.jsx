@@ -7,6 +7,9 @@ import Body from './Body';
 import Footer from './Footer';
 import Image from './Image/index';
 
+
+
+
 const links = [
     {
         title: "Home",

@@ -5,7 +5,7 @@ import { Card, CardHeader, CardBody, Image, Chip } from "@nextui-org/react";
 
 export default function App() {
     return (
-        <div className="flex flex-col flex-wrap w-full justify-center items-center mt-20 px-20">
+        <div className="flex flex-col flex-wrap w-full justify-center items-center lg:mt-20 lg:px-20 md:mt-20 md:px-20">
 
             {/* Section header */}
             <div className="section-title flex flex-col w-full py-10 justify-center items-center">

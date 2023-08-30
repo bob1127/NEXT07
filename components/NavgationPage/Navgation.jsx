@@ -26,7 +26,7 @@ function AnimatedTabs() {
     let [activeTab, setActiveTab] = useState(tabs[0].id);
 
     return (
-        <div className="flex space-x-1 flex justify-center fixed left-1/2 z-50 bottom-3 translate-x-50">
+        <div className="flex space-x-1 flex justify-center fixed  z-30 bottom-3 m-auto left-0 right-0 ">
             <div className="wrap  bg-slate-100  backdrop-blur-md
 
  w-auto inline-block px-8 rounded-full py-2">

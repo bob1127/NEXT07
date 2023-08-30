@@ -30,10 +30,10 @@ export default function index() {
 
     return (
         
-        <div className="wrap">
+        <div className="wrap hidden sm:flex">
        
 
-            <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600" data-aos="slide-down" data-aos-delay='500'>
+            <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600" s>
                 <div className="text-center top py-4 text-white bg-gray-900">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dignissimos !</div>
 
 

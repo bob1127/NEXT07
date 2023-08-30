@@ -10,16 +10,19 @@ import Features from '@/components/features'
 import FeaturesBlocks from '@/components/features-blocks'
 import Testimonials from '@/components/testimonials'
 // import Newsletter from '@/components/newslHetter'
-import ApplicateCard from '../components/Application/ApplicateCard'
-import CardHover from '../components/CardHover'
-import Cards from '../components/Cards/Cards'
-import { properties } from "../constants/data";
-import  AnimatedTabs  from '../components/NavgationPage/Navgation'
-import NewsletterForm from '../components/NewsLetter/NewsLetter'
+import ApplicateCard from '../../components/Application/ApplicateCard'
+import CardHover from '../../components/CardHover'
+import Cards from '../../components/Cards/Cards'
+import { properties } from "../../constants/data";
+import AnimatedTabs from '../../components/NavgationPage/Navgation'
+import NewsletterForm from '../../components/NewsLetter/NewsLetter'
 // import ToggleMenu from '../components/ToggleMenu/header'
+import Link from 'next/link'
+import { useTranslation } from '../i18n'
+import { Footer } from '../../components/Footer'
 
-
-export default function Home() {
+export default async function Home({ params: { lng } }) {
+  const { t } = await useTranslation(lng)
   return (
     <>
      
@@ -34,7 +37,15 @@ export default function Home() {
         
         </section>
 
-        
+        <h1>{t('title')}</h1>
+        <Link href={`/${lng}/Products`}>
+          {t('to-second-page')}
+        </Link>
+        <br />
+        <Link href={`/${lng}/client-page`}>
+          {t('to-client-page')}
+        </Link>
+        <Footer lng={lng} />
 
        
         <Features/>

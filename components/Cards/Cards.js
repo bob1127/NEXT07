@@ -20,7 +20,7 @@ const Card = ({ data }) => {
 
     return (
         <div className="card-wrap">
-            
+            {/* 刪除不影響 */}
             <Listing data={data} open={openModal} />
             <AnimatePresence>
                 {open && (
