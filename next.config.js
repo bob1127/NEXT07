@@ -14,7 +14,7 @@ const nextConfig = {
   //   path: "/",
   //      domains: ['www.zemsor.com.tw'],
   // },
-    // output:'export'
+    output:'export'
 }
 
 module.exports = nextConfig

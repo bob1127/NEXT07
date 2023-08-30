@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[647],{8647:function(e){e.exports=JSON.parse('{"languageSwitcher":"Wechseln von <1>{{lng}}</1> nach: "}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[350],{2350:function(e){e.exports=JSON.parse('{"title":"Client Seite","counter_one":"eines ausgew\xe4hlt","counter_other":"{{count}} ausgew\xe4hlt","counter_zero":"keines ausgew\xe4hlt","back-to-home":"Zur\xfcck zur Hauptseite"}')}}]);

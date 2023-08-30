@@ -8,7 +8,7 @@ import Features from '@/components/features'
 import FeaturesBlocks from '@/components/features-blocks'
 import Testimonials from '@/components/testimonials'
 import Newsletter from '@/components/newsletter'
-import Style from '../../styles/products.scss'
+import Style from '../../../styles/products.scss'
 
 export default function Home() {
     return (

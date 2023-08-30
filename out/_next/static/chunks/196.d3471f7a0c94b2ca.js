@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[196],{6196:function(e){e.exports=JSON.parse('{"title":"Client page","counter_one":"one selected","counter_other":"{{count}} selected","counter_zero":"none selected","back-to-home":"Back to home"}')}}]);

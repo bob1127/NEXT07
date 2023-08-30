@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[663],{7663:function(e){e.exports=JSON.parse('{"title":"Hallo von der zweiten Seite!","back-to-home":"Zur\xfcck zur Hauptseite"}')}}]);
